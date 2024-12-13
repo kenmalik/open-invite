@@ -112,7 +112,7 @@ export default function People() {
   });
 
   return (
-    <div className=" overflow-y-hidden">
+    <div >
       {x.map((entry) => (
         <PersonBlock person={entry} key={entry.name} />
       ))}
