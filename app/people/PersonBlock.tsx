@@ -8,7 +8,7 @@ type PersonBlockProps = {
 export default function PersonBlock({ person }: Readonly<PersonBlockProps>) {
   return (
     <div className=" flex items-center justify-between py-3 ">
-      <div className="size-50 font-bold"> {person.name}</div>
+      <div className=" font-bold"> {person.name}</div>
       <div className="flex items-center  ">
         {person.close && (
           <StarIcon className="size-5 ml-1 mt-2.25  text-white  " />
