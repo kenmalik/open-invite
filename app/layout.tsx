@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { PostBar } from "@/components/PostBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,14 +48,12 @@ export default function RootLayout({
           </nav>
           <main className="flex-grow px-4 w-1/3 ">
             <div className="border-l border-r px-4 h-full">
-              <div className="overflow-y-scroll px-2 no-scrollbar max-h-full">{children}</div>
+              <div className="overflow-y-scroll px-2 no-scrollbar max-h-full">
+                {children}
+              </div>
             </div>
           </main>
-          <form className="flex-grow p-8 pl-12 text-lg font-bold">
-            <button className="py-2 px-6 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
-              + Post
-            </button>
-          </form>
+          <PostBar />
         </div>
       </body>
     </html>

@@ -12,6 +12,28 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+        disappear: {
+          "0%": {
+            opacity: "1",
+          },
+          "100%": {
+            opacity: "0",
+          },
+        },
+      },
+      animation: {
+        appear: "appear 0.1s ease-in-out",
+        disappear: "appear 0.1s ease-in-out",
+      },
     },
   },
   plugins: [],
