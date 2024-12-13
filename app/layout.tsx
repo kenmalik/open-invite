@@ -45,9 +45,9 @@ export default function RootLayout({
               </li>
             </ul>
           </nav>
-          <main className="flex-grow px-4 w-1/3">
+          <main className="flex-grow px-4 w-1/3 ">
             <div className="border-l border-r px-4 h-full">
-              <div className="px-2 py-8">{children}</div>
+              <div className="overflow-y-scroll px-2 no-scrollbar max-h-full">{children}</div>
             </div>
           </main>
           <form className="flex-grow p-8 pl-12 text-lg font-bold">
