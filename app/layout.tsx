@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,34 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex h-screen py-16">
+          <nav className="flex-grow flex justify-end p-8 pr-12 text-lg">
+            <ul>
+              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+                <Link href="/events">Events</Link>
+              </li>
+              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+                <Link href="/groups">Groups</Link>
+              </li>
+              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+                <Link href="/people">People</Link>
+              </li>
+              <li className="py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+                <Link href="/profile">Profile</Link>
+              </li>
+            </ul>
+          </nav>
+          <main className="flex-grow px-4 w-1/3">
+            <div className="border-l border-r px-4 h-full">
+              <div className="px-2 py-8">{children}</div>
+            </div>
+          </main>
+          <form className="flex-grow p-8 pl-12 text-lg font-bold">
+            <button className="py-2 px-6 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+              + Post
+            </button>
+          </form>
+        </div>
       </body>
     </html>
   );
