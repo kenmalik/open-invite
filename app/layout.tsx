@@ -32,16 +32,16 @@ export default function RootLayout({
         <div className="flex h-screen py-16">
           <nav className="flex-grow flex justify-end p-8 pr-12 text-lg">
             <ul>
-              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+              <li className="font-bold mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
                 <Link href="/events">Events</Link>
               </li>
-              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+              <li className="font-bold mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
                 <Link href="/groups">Groups</Link>
               </li>
-              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+              <li className="font-bold mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
                 <Link href="/people">People</Link>
               </li>
-              <li className="py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
+              <li className="font-bold py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
                 <Link href="/profile">Profile</Link>
               </li>
             </ul>
