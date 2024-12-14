@@ -32,17 +32,37 @@ export default function RootLayout({
         <div className="flex h-screen py-16">
           <nav className="flex-grow flex justify-end p-8 pr-12 text-lg">
             <ul>
-              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
-                <Link href="/events">Events</Link>
+              <li className="mb-4">
+                <Link
+                  href="/events"
+                  className="font-bold py-2 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out"
+                >
+                  Events
+                </Link>
               </li>
-              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
-                <Link href="/groups">Groups</Link>
+              <li className="mb-4">
+                <Link
+                  href="/groups"
+                  className="font-bold py-2 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out"
+                >
+                  Groups
+                </Link>
               </li>
-              <li className="mb-4 py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
-                <Link href="/people">People</Link>
+              <li className="mb-4">
+                <Link
+                  href="/people"
+                  className="font-bold py-2 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out"
+                >
+                  People
+                </Link>
               </li>
-              <li className="py-1 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out">
-                <Link href="/profile">Profile</Link>
+              <li>
+                <Link
+                  href="/profile"
+                  className="font-bold py-2 px-5 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out"
+                >
+                  Profile
+                </Link>
               </li>
             </ul>
           </nav>
