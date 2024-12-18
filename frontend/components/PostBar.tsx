@@ -3,12 +3,16 @@
 import { useState } from "react";
 import { Modal } from "./Modal";
 
-export function PostBar() {
+export type PostBarType = {
+  className?: string;
+};
+
+export function PostBar({ className }: PostBarType) {
   const [dialogVisible, setDialogVisible] = useState<boolean>(false);
 
   return (
     <>
-      <div className="flex-grow p-8 pl-12 text-lg font-bold">
+      <div className={`flex-grow p-8 pl-12 text-lg font-bold ${className}`}>
         <button
           className="py-2 px-6 rounded hover:bg-amber-200 hover:text-black active:bg-amber-100 transition ease-in-out"
           onClick={() => setDialogVisible(true)}

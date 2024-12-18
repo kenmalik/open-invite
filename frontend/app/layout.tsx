@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex h-screen py-16">
-          <nav className="flex-grow flex justify-end p-8 pr-12 text-lg">
+          <nav className="flex-grow flex justify-end p-8 pr-12 text-lg border-r">
             <ul>
               <li className="mb-4">
                 <Link
@@ -67,13 +67,9 @@ export default function RootLayout({
             </ul>
           </nav>
           <main className="flex-grow px-4 w-1/3 ">
-            <div className="border-l border-r px-4 h-full">
-              <div className="overflow-y-scroll px-2 no-scrollbar max-h-full">
-                {children}
-              </div>
-            </div>
+            <div className="px-4 h-full overflow-y-auto">{children}</div>
           </main>
-          <PostBar />
+          <PostBar className="border-l" />
         </div>
       </body>
     </html>
